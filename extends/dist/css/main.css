@@ -1,0 +1,76 @@
+.container .grid--three img, .container .grid--two img, .container .grid img {
+  width: 200px;
+}
+.container .grid--three p, .container .grid--two p, .container .grid p {
+  font-size: 18px;
+  overflow: hidden;
+  text-align: center;
+}
+.container .grid--three h2, .container .grid--two h2, .container .grid h2 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+.container .grid {
+  background-color: rgba(223, 211, 211, 0.305);
+  box-shadow: 0 0 10px rgba(223, 211, 211, 0.305);
+  width: auto;
+  padding: 10px;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+.container .grid .button, .container .grid .button--success, .container .grid .button--serious {
+  margin-top: auto;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  width: 150px;
+  height: 60px;
+  color: rgb(255, 148, 8);
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  outline: 2px solid rgb(255, 148, 8);
+}
+.container .grid .button--serious {
+  background-color: black;
+}
+.container .grid .button--success {
+  background-color: green;
+  color: white;
+  border: 2px solid transparent;
+  outline: 5px solid black;
+}
+.container .grid--two img {
+  width: 250px;
+}
+.container .grid--two p {
+  font-size: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+.container .grid--two h2 {
+  font-size: 26px;
+  text-align: center;
+}
+.container .grid--three img {
+  width: 300px;
+}
+.container .grid--three p {
+  font-size: 24px;
+  overflow: hidden;
+  text-align: center;
+}
+.container .grid--three h2 {
+  font-size: 30px;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

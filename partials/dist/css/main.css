@@ -1,0 +1,17 @@
+.QA {
+  margin: 60px 10px;
+  height: 20vh;
+  padding-bottom: 20px;
+}
+.QA h2 {
+  font-family: "Arial", sans-serif;
+}
+.QA .QAdate {
+  display: flex;
+}
+.QA .QAdate h5 {
+  color: rgb(32, 174, 214);
+}
+.QA .QAdate h4 {
+  color: grey;
+}/*# sourceMappingURL=main.css.map */

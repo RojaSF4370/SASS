@@ -1,0 +1,107 @@
+$primary-color: rgb(255, 148, 8);
+$grid-background-color: rgba(223, 211, 211, 0.305);
+$box-shadow-color: rgba(223, 211, 211, 0.305);
+
+%shared-styles {
+  img {
+    width: 200px;
+  }
+
+  p {
+    font-size: 18px;
+    // line-height: 40px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+
+  .grid {
+    @extend %shared-styles;
+    background-color: $grid-background-color;
+    box-shadow: 0 0 10px $box-shadow-color;
+    width: auto;
+    padding: 10px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+
+    .button {
+      margin-top: auto; 
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      border-radius: 20px;
+      width: 150px;
+      height: 60px;
+      color: $primary-color;
+      font-size: 15px;
+      font-weight: bold;
+      border: 2px solid transparent;
+      outline: 2px solid $primary-color;
+
+      &--serious {
+        @extend .button;
+        background-color: black;
+      }
+
+      &--success {
+        @extend .button;
+        background-color: green;
+        color: white;
+        border: 2px solid transparent;
+        outline: 5px solid black;
+      }
+    }
+
+    &--two {
+      @extend %shared-styles;
+      img {
+        width: 250px;
+      }
+    
+      p {
+        font-size: 20px;
+        overflow: hidden;
+        text-align: center;
+      }
+    
+      h2 {
+        font-size: 26px;
+        text-align: center;
+      }
+
+    }
+
+    &--three {
+      @extend %shared-styles;
+      img {
+        width: 300px;
+      }
+    
+      p {
+        font-size: 24px;
+        overflow: hidden;
+        text-align: center;
+      }
+    
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+    }
+  }
+}

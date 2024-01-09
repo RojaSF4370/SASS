@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+.container .blocks {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 10px 5px;
+  height: 93vh;
+}
+.container .blocks-one {
+  width: 200px;
+}
+.container .blocks-two {
+  width: 350px;
+}
+.container .blocks-three {
+  width: 500px;
+}
+.container .blocks-four {
+  width: 1000px;
+}/*# sourceMappingURL=main.css.map */

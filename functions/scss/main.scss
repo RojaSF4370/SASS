@@ -1,0 +1,29 @@
+$column-gap:10px;
+@function size($multiplier) {
+    $base-width: 50px;
+    @return $base-width * $multiplier;
+  }
+.container{
+    display: flex;
+   .blocks{
+    background-color: black;
+    color:white;
+    padding: $column-gap;
+    margin: 10px 5px;
+    height:93vh;
+    &-one{
+        width: size(4);
+    }
+    &-two{
+        width: size(7);
+    }
+    &-three{
+        width: size(10);
+
+    }
+    &-four{
+        width: size(20);
+  
+    }
+   }
+}
